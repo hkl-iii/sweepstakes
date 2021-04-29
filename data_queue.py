@@ -9,3 +9,8 @@ class Queue:
 
     def dequeue(self):
         return self.queue.pop(0)
+
+    def pop(self):
+        pass
+
+    
