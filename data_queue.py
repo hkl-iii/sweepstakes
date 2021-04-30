@@ -12,5 +12,3 @@ class Queue:
 
     def pop(self):
         pass
-
-    
