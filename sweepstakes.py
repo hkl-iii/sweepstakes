@@ -6,18 +6,24 @@ contestant = Contestant('', '', '', '')
 
 class Sweepstakes:
     def __init__(self, name):
+        self.winner = name
         self.contestant = {}
         self.name = name
 
-    def register_contestant(self, contestant):
-        key = len(self.contestant_list) + 1
-        self.contestant_list[key] = contestant
+    def register_contestant(self, registered_contestant):
+        self.input('Enter your info')
+        key = len(self.contestant) + 1
+        self.contestant[key] = registered_contestant
 
-    def pick_winner(self, contestant):
-        print(random.choice(contestant))
+    def pick_winner(self, name, registered_contestant):
+        self.winner = (name.random.choice(registered_contestant))
+        print(f'And the winner is {self.winner.first_name} {self.winner.last_name}!!')
 
-    def print_contestant_info(self, contestant):
-        print(contestant.first_name)
-        print(contestant.last_name)
-        print(contestant.email_address)
-        print(contestant.registration_number)
+    def print_contestant_info(self, registered_contestant):
+        print(registered_contestant.first_name)
+        print(registered_contestant.last_name)
+        print(registered_contestant.email_address)
+        print(registered_contestant.registration_number)
+
+    def input(self, registered_contestant):
+        pass
