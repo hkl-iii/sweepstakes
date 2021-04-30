@@ -7,3 +7,5 @@ class Contestant:
 
     def notify_winner(self):
         pass
+
+
